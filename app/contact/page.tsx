@@ -33,7 +33,7 @@ export default function ContactPage() {
           href="/"
           className="self-start text-xs uppercase tracking-[0.5em] text-white/60"
         >
-          back to portal
+          back to monitor room
         </Link>
       </div>
     </main>

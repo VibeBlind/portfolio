@@ -11,7 +11,7 @@ import { Ground } from './Ground'
 import { SpinningBox } from './SpinningBox'
 //import { Eye } from './Eye'
 
-export default function PortalScene() {
+export default function MonitorScene() {
   return (
     <div className="h-full w-full">
       <Suspense fallback={null}>

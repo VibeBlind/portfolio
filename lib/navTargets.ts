@@ -8,23 +8,23 @@ export type NavTarget = {
 
 export const NAV_TARGETS: NavTarget[] = [
   {
-    label: "Work",
-    description: "Projects that stay intentional and lean",
-    href: "/work",
+    label: "Aethergraph",
+    description: "Generative mapping and visual systems",
+    href: "/work/aethergraph",
     color: "#a855f7",
     position: [-2.4, 0.4, -3.6],
   },
   {
-    label: "Studio",
-    description: "Process notes, rigs, and tests",
-    href: "/studio",
+    label: "XR",
+    description: "Immersive interfaces and spatial UX",
+    href: "/work/xr",
     color: "#22d3ee",
     position: [0, 0.8, -4],
   },
   {
-    label: "Contact",
-    description: "Collaborations, invites, signals",
-    href: "/contact",
+    label: "Systems",
+    description: "Lean product systems under constraints",
+    href: "/work/systems",
     color: "#facc15",
     position: [2.4, 0.4, -3.6],
   },

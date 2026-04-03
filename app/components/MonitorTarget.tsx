@@ -4,7 +4,7 @@ import { Float, Html, useCursor } from "@react-three/drei";
 import { useState } from "react";
 import type { NavTarget } from "../../lib/navTargets";
 
-export default function PortalTarget({
+export default function MonitorTarget({
   target,
   onSelect,
 }: {

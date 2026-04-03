@@ -2,9 +2,13 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
 
 import { NAV_TARGETS } from "../lib/navTargets";
-import PortalScene from "./components/PortalScene";
+
+const MonitorScene = dynamic(() => import("./components/MonitorScene"), {
+  ssr: false,
+});
 
 type MediaQueryWithHandlers = MediaQueryList & {
   addListener?: (
@@ -22,7 +26,7 @@ export default function Home() {
     <main className="relative flex h-screen flex-col overflow-hidden bg-neutral-950 text-white">
       <HomePortal />
       <div className="pointer-events-none absolute inset-x-0 top-6 flex justify-center text-xs uppercase tracking-[0.4em] text-white/40 sm:text-sm">
-        vibeblind portal
+        vibeblind monitor room
       </div>
     </main>
   );
@@ -72,7 +76,7 @@ function HomePortal() {
     <div className="relative flex-1">
       {canShowScene ? (
         <div className="absolute inset-0">
-          <PortalScene />
+          <MonitorScene />
         </div>
       ) : (
         <div className="absolute inset-0">
@@ -87,9 +91,9 @@ function FallbackNavigation() {
   return (
     <section className="flex h-full min-h-screen flex-col items-center justify-center gap-8 bg-gradient-to-b from-neutral-900 via-neutral-950 to-black px-6 text-center">
       <div className="max-w-lg space-y-4">
-        <p className="text-sm uppercase tracking-[0.4em] text-white/40">portal room</p>
+        <p className="text-sm uppercase tracking-[0.4em] text-white/40">monitor room</p>
         <h1 className="text-3xl font-semibold text-white sm:text-4xl">
-          Portal room disabled
+          Monitor room disabled
         </h1>
         <p className="text-sm text-white/70">
           We honor narrow screens and reduced motion preferences with a focused navigation

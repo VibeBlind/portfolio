@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "vibeblind.io | Portfolio",
   description:
-    "Minimalist portfolio for vibeblind — a 3D portal room that points to work, studio notes, and contact.",
+    "Minimal portfolio for vibeblind.io with a 3-monitor room linking to focused case studies.",
 };
 
 export default function RootLayout({
